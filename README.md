@@ -4,7 +4,7 @@
 
  > This is a bomb made by **Dr. Evil**. Disarm it by finding the key in the bomb! 
 
-This BombLab assignment is retrieved from [CS:APP Lab Assigments](http://csapp.cs.cmu.edu/3e/labs.html). This helps students practice the skills of reverse engineering and debugging using tools such as `gdb`. Also, by defusing the bomb, students would be able to get familiar with Linux environment and assembly language. 
+This **Bomb Lab** assignment is retrieved from [CS:APP Lab Assigments](http://csapp.cs.cmu.edu/3e/labs.html). This helps students practice the skills of reverse engineering and debugging using tools such as `gdb`. Also, by defusing the bomb, students would be able to get familiar with Linux environment and assembly language. 
 
 This repository is consists of the following files:
 

@@ -8,11 +8,11 @@ This **Bomb Lab** assignment is retrieved from [CS:APP Lab Assigments](http://cs
 
 This repository is consists of the following files:
 
- - `bomb.c` - The source code of the bomb. There are 
- - `bomb` - The executable file of the bomb. 
- - `README` - The identification of the bomb. (not this file)
- - `README.md` - This file, about this bomb and repository. 
-- `solution.md` - The solution of the bomb. *This file is to be updated.* 
+ - [`bomb.c`](bomb.c) - The source code of the bomb. There are 
+ - [`bomb` ](bomb)- The executable file of the bomb. 
+ - [`README`](README) - The identification of the bomb. (not this file)
+ - [`README.md`](README.md) - This file, about this bomb and repository. 
+- [`solution.md`](solution.md) - The solution of the bomb. *This file is to be updated.* 
 
 The binary bomb consists of 6 phases. Each phase requires a specific input to defuse the bomb. The bomb is defused if all 6 phases are defused. The input string can be found from the assembly code of each phase. Go for it!
 

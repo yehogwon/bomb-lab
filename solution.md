@@ -24,7 +24,21 @@ As can be seen in the code snippet, it starts with getting an input string from 
 
 So, what we can learn from this code snippet is: all we need to look into is the `phase_n` function. We will hopefully find the code (i.e., password) of the bomb of each phase in the `phase_n` function. 
 
+Let's get started! Execute `gdb bomb` in the command line to run `gdb` and load the bomb executable. 
+
 ## 🥱 Phase 1
+
+As mentioned earlier, we need to look into the `phase_1` function. To do this, call `disassemble phase_1`. 
+
+![disassemble phase_1](res/disassemble_phase_1.png)
+
+Where we need to focus on is the second line of the assembly code: `mov $0x402400, %esi`. This command moves (i.e., stores) the intermediate value 0x402400 into the register `%esi`. Recall that the purpose of the `%esi` register is used to store the argument for a function call. So, we can assume that 0x402400 is the memory address of the password string. Let's find the content string at this address using `x/s`. 
+
+![x/s 0x402400](res/x_s_phase_1.png)
+
+Whoa! We found the password of phase 1! It is `Border relations with Canada have never been better.`. So, if we input this string, the bomb will be defused in phase 1. 
+
+![./bomb phase 1](res/defused_phase_1.png)
 
 ## 🙂 Phase 2
 
